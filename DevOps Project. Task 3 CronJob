@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: get-public-ip
+spec:
+  schedule: "0 14 * * *" # Runs daily at 14:00 UTC
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: curl
+            image: curlimages/curl:latest
+            command: ["curl", "-s", "https://httpbin.org/ip"]
+          restartPolicy: OnFailure
+
