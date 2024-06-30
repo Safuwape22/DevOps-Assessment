@@ -1,3 +1,5 @@
+<Task 1>
+
 Given the existing infrastructure in the diagram, create a Terraform
 configuration that will deploy a t3.large instance to us-east-1 in subnet-1234567
 with the latest Ubuntu 22.04 LTS AMI. There should be an additional 40 GiB gp3
@@ -9,3 +11,8 @@ AWS CLI installed.
 ----Solution----
 
 1.	To execute the following Terraform configuration I created, start by running "terraform init" to initialize the backend and download provider plugins. Next, validate the configuration with "terraform validate" and preview the resources to be provisioned or changed with "terraform plan." Finally, apply the configuration by running "terraform apply". Kindly refer to the configuration. In file "tf-config" is the hard-coded version of the terraform configuration. I prepared a version of the code that is not hard-coded which you can view and execute	( i.e. main.tf,variables.tf,and output.tf). Hard-coding is never recommended because it renders the code not re-usable and for security purposes. I do not hard code; However, I prepared both for you to view and execute.
+
+
+<Task 3>
+
+The requested CronJob yaml file has been included in this repository. It is under the name, " Task3 CronJob ."
