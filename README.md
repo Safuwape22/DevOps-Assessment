@@ -43,7 +43,7 @@ resource "aws_subnet" "subnet2" {
     Name = "Subnet-7654321"
   }
 }
-# As specified
+# This is the specified security group.
 resource "aws_security_group" "ssh" {
   vpc_id      = aws_vpc.main.id
   name        = "allow_ssh"
@@ -96,11 +96,11 @@ resource "aws_instance" "web" {
   }
 # Additional volume
   ebs_block_device {
-    device_name = "/dev/sdh"
+    device_name = "/dev/SDH"
     volume_size = 40 # As specified in the assessment
     volume_type = "gp3" # As specified in the assessment
   }
-# This bootstrap will fetch the latest AWS cli as you requested in question 1
+# This bootstrap will fetch the latest AWS CLI as you requested in question 1
   user_data = <<-EOF
               #!/bin/bash
               apt-get update
