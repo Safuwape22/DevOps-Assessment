@@ -87,4 +87,3 @@ resource "aws_instance" "main" {
   }
 }
 
-hello
