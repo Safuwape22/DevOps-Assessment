@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "The AWS region to deploy resources"
   type        = string
-  default     = "us-east-1"
+  default     = "us-west-1"
 }
 
 variable "vpc_cidr" {
@@ -25,7 +25,7 @@ variable "subnet1_cidr_block" {
 variable "subnet1_availability_zone" {
   description = "The availability zone for subnet1"
   type        = string
-  default     = "us-east-1a"
+  default     = "us-west-1a"
 }
 
 variable "subnet1_name" {
@@ -43,7 +43,7 @@ variable "subnet2_cidr_block" {
 variable "subnet2_availability_zone" {
   description = "The availability zone for subnet2"
   type        = string
-  default     = "us-east-1b"
+  default     = "us-west-1b"
 }
 
 variable "subnet2_name" {
