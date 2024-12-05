@@ -43,7 +43,7 @@ variable "subnet2_cidr_block" {
 variable "subnet2_availability_zone" {
   description = "The availability zone for subnet2"
   type        = string
-  default     = "us-west-1b"
+  default     = "us-west-1c"
 }
 
 variable "subnet2_name" {
